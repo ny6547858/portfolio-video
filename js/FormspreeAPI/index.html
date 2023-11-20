@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="contact">
+        <div class="container">
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>sm2204@nate.com</h3>
+                </div>
+                <div class="contact-right">
+                    <ul class="social">
+                        <li><a href="#">INSTAGRAM</a></li>
+                        <li><a href="#">TWITTER</a></li>
+                        <li><a href="#">KAKAOTALK</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- formspree form API POPUP -->
+            <div class="contact-modal">
+                <h3>Lets's Talk</h3>
+                <form action="https://formspree.io/f/xdorjaer" method="POST">
+                 <input type="text" name="Name" placeholder="Name" required>
+                 <input type="email" name="Email" placeholder="Email" required>
+                 <input type="text" name="Subject" placeholder="Subject" required>
+                 <textarea name="Message" placeholder="message...." required ></textarea>
+                 <input type="submit" value="Submit" class="button"> 
+                 <input type="reset" class="reset">     
+                </form>
+            </div>
+            <!-- formspree form API POPUP -->
+            <div class="contact-modal-mask"></div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>

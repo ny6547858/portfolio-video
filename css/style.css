@@ -1,0 +1,688 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Source+Serif+4:opsz,wght@8..60,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* base */
+:root{
+    --maincolor: #FFB7DB;
+    --purplecolor: #3A0074;
+    --pointcolor: #D9D469;
+    --typographycolor: #000000;
+    --typographycolor1: #EDEEDE;
+    --h1font: '휴먼둥근헤드라인';
+    --h2font:'Libre Baskerville';
+    --pfont: 'Domine';
+    --videopfont: 'NanumSquareRound';
+    --underfont: 'Source Serif 4';
+    --aboutfont: 'Archivo Black';
+    --aboutpfont: 'Noto Serif KR';
+    --mainfont: 'Agbalumo'
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: top;
+}
+body {
+    position: relative;
+}
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+.section {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: var(--maincolor);
+    /* border: 5px solid red; */
+}
+/* ============헤더영역============ */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    padding-top: 91px;
+}
+header .header-container {
+    height: 80px;   
+}
+header .header-container .logo {
+    position: relative;
+}
+header .header-container .logo img {
+    width: 10%;
+    position: absolute;
+    left: 44%;
+    top: -39px;
+}
+header nav ul {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    width: 56%;
+    padding: 25px 0;
+    background-color: #000;
+    border-radius: 120px; 
+    margin: 0 auto;
+}
+header nav ul li {
+    font-size: 22px;
+    font-family: 'Cambria Math';
+    margin-right: 100px;
+    font-weight: 500;
+}
+header nav ul .empty-title {
+   display: none;
+}
+header nav ul li:nth-child(1) {
+    margin-left: 60px;
+}
+header nav ul li:nth-child(3){
+    margin-left: 152px;
+}
+header nav ul li a {
+    
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: block;
+    transition: .3s;
+}
+header nav ul li a:hover {
+    background-color: rgb(217, 212, 105);
+    color: #333;
+    
+}
+/* ============ 메인영역 ============  */
+/* ============ HOME 영역 ============ */
+#home {
+    background-color: var(--purplecolor);    
+    display: flex;
+    justify-content: center;
+    align-items:center;  
+    overflow: hidden;
+    position: relative;
+}
+#home .home-container {       
+    max-width: 1700px;
+    width: 100%;    
+}
+#home .contents-box {
+    width: 100%;
+    height: 850px;
+    background-color: var(--maincolor);
+    border-radius: 80px;
+    margin: 2% auto 4.2%;
+    position: relative;
+}
+#home .contents-box h1 {
+    font-size: 130px;
+    text-align: center;
+    padding-top: 220px;
+    font-family: '휴먼둥근헤드라인';
+}
+#home .contents-box h3 {
+    font-size: 30px;
+    text-align: center;
+}
+#home .contents-box img {
+    width: 38%;    
+    position: absolute;
+    top: 54%;
+    left: 30%;
+}
+.cover {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    display: flex;
+    font-size: 35px;
+    font-style: italic;
+    color: #fff;
+    font-family: var(--underfont)
+}
+/* ============ HOME2 영역 ============ */
+#subpage .contents-box {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#subpage .contents-box h2 {
+    font-size: 110px;
+    padding: 350px 0;
+    font-family: var(--h2font);
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+#subpage .contents-box p {
+    font-size: 24px;
+    margin-top: 25px;
+    font-family: var(--pfont);
+    line-height: 1.2px;
+} 
+#subpage .contents-box .character {
+    width: 15%;
+    position: absolute;
+    top: 345px;
+    left: 28px;
+}
+#subpage .contents-box .airplane {
+    width: 10%;
+    position: absolute;
+    right: 4%;
+    bottom: 244px;
+    /* rotate: -12deg; */
+}
+#subpage .contents-box .eye {
+    width: 10%;
+    position: absolute;
+    top: 362px;
+    right: 74px;
+}
+
+/* ============ PORTFOLIO 영역 ============ */
+/* SWIPER SLIDE 영역 */
+/* main-video 영역 */
+#portfolio {
+    padding-bottom: 150px;
+    background-color: antiquewhite;
+}
+#portfolio .container .main-title {
+    font-size: 66px;
+    font-family: var(--mainfont);
+    padding-top: 15px;
+}
+#portfolio .mySwiper2 {
+    max-width: 1500px;
+    width: 100%;
+}
+#portfolio .mySwiper2 .swiper-slide {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: top;
+    margin: 0 auto;
+    padding-top: 18%;
+}
+#portfolio .mySwiper2 .swiper-slide .title-box {
+    flex-basis: 28%;
+    margin-left: 4%;
+} 
+#portfolio .mySwiper2 .swiper-slide .title {
+    width: 32%;
+    height: 100%;
+    margin-top: 43px;
+    padding-left: 27px;
+} 
+#portfolio #media {
+    flex-basis: 48%;
+    margin-right: 17px;
+}
+#portfolio .player-box {
+    position: relative;
+    height: 0;
+    padding-top: 0px;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    border-radius: 40px;
+    border: 25px solid #000;
+}
+#portfolio .youtube {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+#portfolio .mySwiper2 .swiper-slide h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+#portfolio .mySwiper2 .swiper-slide p {
+    margin-top: 7px;
+    font-family: var(--videopfont);
+}
+#portfolio .mySwiper2 .swiper-slide .view-btn {
+    background-color: #000000;
+    border-radius: 60px;
+    color: #fff;
+    display: inline-block;
+    padding: 4px 30px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+    cursor: pointer;
+}
+/* sw-video 영역 */
+#portfolio .container {
+    position: relative;
+}
+#portfolio .mySwiper {
+    max-width:  1247px;;
+    width: 181%;
+    height: 206px;
+    background-color: #000000;
+    margin-top: 27px;
+    border-radius: 25px;
+}
+#portfolio .mySwiper .swiper-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+#portfolio .mySwiper .swiper-slide img {
+    display: block;
+    width: 84%;
+    height: 80%;
+    object-fit: cover;
+    /* border: 10px solid #3A0074; */
+    border-radius: 20px;
+    cursor: pointer;
+}
+/* sw-video 버튼 */
+.button-next {
+    width: 69px;
+    height: 69px;
+    font-size: 48px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background-color: var(--typographycolor);
+    position: absolute;
+    top: 85%;
+    right: -3%;
+    cursor: pointer;
+    z-index: 999;
+}
+.button-prev {
+    width: 69px;
+    height: 69px;
+    font-size: 48px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background-color: var(--typographycolor);
+    position: absolute;
+    top: 85%;
+    left: -3%;
+    cursor: pointer;
+    z-index: 999;
+}
+/* ============ ABOUT 영역 ============ */
+#about {
+    background-color: #FFB7DB;
+    
+}
+#about .about-container {
+    max-width: 1500px;
+    width: 100%;
+    padding: 206px 0;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+}
+#about .main-title {
+    font-size: 66px;
+    font-family: var(--mainfont);
+    padding-top: 10%;
+    padding-bottom: 3%;
+}
+#about .left-text {
+    font-size: 40px;
+    /* letter-spacing: 0.5px; */
+    padding-top: 1%;
+    line-height: 1.1;
+}
+#about .right-text {
+    font-size: 38px;
+    height: 30%;
+    line-height: 1.5;
+    position: absolute;
+    top: 51%;
+    right: -1%;
+}
+#about p {
+    font-family: var(--aboutpfont);
+    font-size: 18px;
+    line-height: 1.5;
+    padding-top: 51%;
+}
+#about .introduce {
+    width: 29%;
+    margin-left: -1.5%;
+}
+#about .introduce_view {
+    width: 52%;
+    padding-top: 84px;
+}
+#about .introduce_view .interview-box {
+    width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+}
+.interview-box .interview {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -7px;
+    left: -74px;
+    border-radius: 40px;
+}
+#about .arrow {
+    width: 13%;
+    position: absolute;
+    bottom: 344px;
+    right: 186px;
+}
+#about .camera {
+    width: 19%;
+    position: absolute;
+    bottom: 70px;
+    right: 2px;
+    padding-bottom: 68px;
+}
+#about .after-effect  {
+    width: 4.7%;
+    position: absolute;
+    bottom: 14%;
+    right: 21%;
+    rotate: 12deg;
+}
+#about .premiere-pro  {
+    width: 4.5%;
+    position: absolute;
+    bottom: 14%;
+    right: 17%;
+    rotate: -12deg;
+}
+#about .cinema4d  {
+    width: 3.7%;
+    position: absolute;
+    bottom: 19%;
+    right: 19%;
+}
+
+/*  ============ FOOTER 영역 ============  */
+#footer {
+    background-color: var(--purplecolor);
+    display: flex;
+    justify-content: center;
+    align-items:center;  
+    overflow: hidden;
+    position: relative;
+}
+#footer .footer-container {       
+    max-width: 1700px;
+    width: 100%;  
+    padding: 30px 0;  
+}
+#footer .contents-box {
+    width: 100%;
+    height: 900px;
+    background-color: var(--purplecolor);
+    border: 5px solid var(--typographycolor1);
+    border-radius: 80px;
+    position: relative;
+}
+#footer .contents-box .under-line {
+    border: 2px solid var(--typographycolor1);
+    position: absolute;
+    width: 100%;
+    bottom: 270px;
+}
+#footer .contents-box .vertical-line {
+    border: 2px solid var(--typographycolor1);
+    position: absolute;
+    rotate: 90deg;
+    width: 276px;
+    bottom: 132px;
+    right: 109px;
+}
+/* footer 텍스트 */
+#footer .inform {
+    color: #fff;
+    font-size: 22px;
+    font-family: var(--underfont);
+    line-height: 1.6;
+    position: absolute;
+    bottom: 147px;
+    left: 449px;
+}
+#footer .under-inform {
+    color: #fff;
+    font-size: 22px;
+    font-family: var(--underfont);
+    line-height: 2;
+    position: absolute;
+    bottom: 45px;
+    left: 449px;
+}
+#footer .SNS-Follow {
+    color: #fff;
+    font-size: 23px;
+    font-family: var(--underfont);
+    line-height: 2;
+    position: absolute;
+    bottom: 183px;
+    right: 574px;
+}
+/* footer 이미지 */
+#footer .footercharacter {
+    width: 26%;
+    position: absolute;
+    top: 190px;
+    right: 290px;
+}
+#footer .barcodeimg {
+    width: 15%;
+    position: absolute;
+    right: 26px;
+    bottom: -15px;
+}
+#footer .underN {
+    width: 20%;
+    position: absolute;
+    bottom: 16px;
+    left: 83px;
+}
+.SNS-icont {
+    position: relative;
+}
+.face{
+    width: 150px;
+    position:absolute;
+    right: 290px;
+    margin-top: 404px;
+    animation:ball 1s ease-in Infinite Alternate;
+    cursor: pointer;
+}
+@keyframes ball {
+    0% {
+      top:160px;
+    }
+    /* 95% {
+      width: 100px;
+    } */
+    to {
+      top:280px;
+      /* width:115px;
+      height:90px */
+    } 
+}
+
+ .you {
+    width: 220px;
+    position:absolute;
+    right: 355px;
+    margin-top: 325px;
+    animation:scro 1s ease-in Infinite Alternate;
+    cursor: pointer;  
+}
+@keyframes scro {
+    0% {
+      top:190px;
+    }
+    /* 95% {
+      width: 100px;
+    } */
+    to {
+      top:280px;
+      /* width:115px;
+      height:90px */
+    } 
+}
+
+/* FOOTER swiper slide 영역 */
+#footer .swiper {
+    width: 600px;
+    height: 360px;
+    position: absolute;
+    top: 218px;
+    left: 325px;
+    text-align: center;
+}
+#footer .swiper .slide-text {
+    font-family: var(--h2font);
+    color: var(--pointcolor);
+    font-size: 34px;
+    line-height: 1.5;
+    padding: 99px 0;
+}
+#footer.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 18px;
+}
+#footer .swiper-slide p {
+    color: #fff;
+    padding-top: 119px;
+}
+#footer .swiper-slide:nth-child(1) {
+    background-color: black;
+    border-radius: 40px;
+    font-size: 30px;
+    rotate: -4deg;
+    position: absolute;
+    left: 40px;
+}
+
+#footer .swiper-slide:nth-child(2) {
+    background-color: var(--pointcolor);
+    border-radius: 40px;
+    position: absolute;
+    left: 616px;
+    position: absolute;
+    top: 13px;
+}
+
+  /* FOOTER swiper slide 메일박스 */
+  /* modal 창 */
+.contact-modal {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    border-radius: 8px;
+    padding: 38px;
+    z-index: 99;
+
+}
+.contact-modal h3 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.contact-modal form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-modal form input,
+.contact-modal form textarea {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #fff;
+    background:transparent;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+}
+.contact-modal form input:nth-child(1) {
+    width: 47%;
+    margin-right: 6%;
+}
+.contact-modal form input:nth-child(2) {
+    width: 47%;
+}
+.contact-modal form textarea {
+    height: 100px;
+}
+.contact-modal form .button,
+.contact-modal form .reset {
+    width: 100px;
+    margin: 15px auto 0;
+    padding-right: 32px;
+    color: #121212;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+.contact-modal form .button:hover,
+.contact-modal form .reset:hover {
+    background-color: #FFFCD1;
+}
+.contact-modal form .mail {
+    width: 5%;
+    height: 10%;
+    position: relative;
+    bottom: -24px;
+    left: -78px;
+}
+.contact-modal form .return {
+    width: 5%;
+    height: 10%;
+    position: relative;
+    bottom: -23px;
+    left: -83px;
+}
